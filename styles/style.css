@@ -22,7 +22,12 @@
     display: flex;
     align-items: center;
 }
-header,main{
+body{
+    margin: 0px;
+}
+header,
+.plant-section,
+.flower-container{
     max-width: 1250px;
     width: 90%;
     margin: 0 auto;
@@ -42,6 +47,9 @@ section{
 .section-description{
     text-align: center;
     margin-top: 10px;
+}
+.text-align{
+    text-align: center;
 }
 /* nav style */
 .header-section{
@@ -96,11 +104,17 @@ nav a{
     width: 100%;
     padding: 15px 60px;
 }
+.btn-primary:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid #E95A08;
+}
+
 /* flower and plant section */
 .flower-image-container{
     flex: 1;
 }
-.flower-section{
+.flower-container{
     gap: 30px;
     display: flex;
     align-items: center;
@@ -132,7 +146,41 @@ nav a{
 .flower-store-contant ul li{
     margin-bottom: 20px;
 }
-
+/* Join Us Section */
+.join-bg{
+    background-image: url('../images/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+}
+#join-title{
+    margin-bottom: 30px;
+}
+.join-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join-textfild{
+    width: 400px;
+    border: none;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 15px 300px 15px 15px;
+}
+#btn-subscribe{
+    border: none;
+    color: white;
+    background-color: #E95A08;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+#btn-subscribe:hover{
+    background-color: #ff6a00;
+    border: 1px solid #E95A08;
+    
+}
 
 
 
@@ -167,11 +215,28 @@ section{
     padding: 15px 20px;
 }
 /* flower and flant */
-.flower-section{
+.flower-container{
     flex-direction: column;
     padding-top: 0px;
 }
 .flower-first-image{
     width: 100%;
+}
+/* join */
+.join-section {
+    padding: 0 auto;
+}
+.join-textfild{
+    width: 150px;
+    border: none;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 15px 100px 15px 15px;
+}
+#join-title{
+   font-size: 2rem;
+   margin-bottom: 20px;
+}
+.join-bg{
+    height: 250px;
 }
 }
