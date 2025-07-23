@@ -96,13 +96,52 @@ nav a{
     width: 100%;
     padding: 15px 60px;
 }
+/* flower and plant section */
+.flower-image-container{
+    flex: 1;
+}
+.flower-section{
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+.flower-first-image{
+    width: 90%;
+}
+.flower-badge{
+    width: 20%;
+    margin-top: -110px;
+    margin-left: 320px;
+    position: absolute;
+    filter: drop-shadow(4px 4px 3px rgba(0, 0, 0, 0.25));
+}
+.flower-title{
+    font-weight: 700;
+    font-size: 3.25rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.flower-store-contant{
+    flex: 1;
+}
+.flower-store-contant ul{
+    padding-left: 30px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.flower-store-contant ul li{
+    margin-bottom: 20px;
+}
+
+
 
 
 /* responcive style */
 @media screen and (max-width:576px){
     .nav-item li:nth-child(1),
     .nav-item li:nth-child(2),
-    .nav-item li:nth-child(3){
+    .nav-item li:nth-child(3),
+    .flower-badge{
     display: none;
 }
 .hero-section{
@@ -126,5 +165,13 @@ section{
 }
 .btn-primary{
     padding: 15px 20px;
+}
+/* flower and flant */
+.flower-section{
+    flex-direction: column;
+    padding-top: 0px;
+}
+.flower-first-image{
+    width: 100%;
 }
 }
