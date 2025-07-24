@@ -27,7 +27,8 @@ body{
 }
 header,
 .plant-section,
-.flower-container{
+.flower-container,
+.deals-section{
     max-width: 1250px;
     width: 90%;
     margin: 0 auto;
@@ -54,6 +55,10 @@ section{
 /* nav style */
 .header-section{
     justify-content: space-between;
+    padding-top: 20px;
+}
+.brand{
+    height: 72px;
 }
 nav ul {
     gap: 40px;
@@ -146,6 +151,76 @@ nav a{
 .flower-store-contant ul li{
     margin-bottom: 20px;
 }
+/* deals-section */
+.box-container{
+    gap: 30px;
+    align-items: stretch;
+}
+.deal-content{
+    margin-bottom: 50px;
+}
+.left-image{
+    width: 30%;
+    flex-direction: column;
+    gap: 20px;
+    background-size: cover;
+}
+.right-image {
+    width: 66%;
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    height: calc((190px * 2) + 20px);  
+}
+.image-box {
+  width: 100%;
+  height: 190px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.right-image .image-box {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.image-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background-color: rgba(0, 0, 0, 0.498);
+}
+.box-title{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    z-index: 1;
+    margin: 0;
+}
+.right-image .box-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.image-box a {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: white;
+  z-index: 1;
+}
+.right-image .image-box a{
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+}
 /* Join Us Section */
 .join-bg{
     background-image: url('../images/news-letter-bg.png');
@@ -215,6 +290,9 @@ footer{
     .flower-badge{
     display: none;
 }
+.header-section{
+    padding-top: 10px;
+}
 .hero-section{
     flex-direction: column-reverse;
 }
@@ -244,6 +322,34 @@ section{
 }
 .flower-first-image{
     width: 100%;
+}
+/* deals */
+.box-container {
+    flex-direction: column;
+}
+.hide-on-mobile{
+    display: none;
+}
+.left-image,
+.right-image {
+    width: 100%;
+}
+
+.right-image {
+    flex-direction: column;
+    height: auto;
+}
+
+.right-image .image-box {
+    height: 190px;
+    width: 100%;
+}
+.box-title, .right-image .box-title{
+    font-size: 1.25rem;
+}
+.right-image .image-box a {
+    font-size: 1rem;
+    font-weight: 600;
 }
 /* join */
 .join-section {
