@@ -383,3 +383,39 @@ section{
     margin-top: 30px;
 }
 }
+/* responcive for medium device */
+@media screen and (min-width:576px) and (max-width:992px){
+.plant-container{
+    grid-template-columns: repeat(3, 1fr);
+}
+.hero-section{
+    flex-direction: column-reverse;
+}
+.hero-section img {
+    width: 100%;
+    margin-left: 100px;
+}
+.flower-section{
+    margin-top: 100px;
+}
+.flower-title{
+    font-size: 2.75rem;
+}
+.flower-store-contant ul li{
+    font-size: 0.95rem;
+}
+.flower-badge {
+    width: 15%;
+    margin-top: -70px;
+    margin-left: 315px;
+}
+.flower-container{
+    padding-top: 0px;
+}
+.flower-first-image{
+    width: 100%;
+}
+section{
+    margin-top: 50px;
+}
+}
