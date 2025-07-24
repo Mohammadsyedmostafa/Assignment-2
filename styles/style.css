@@ -181,8 +181,31 @@ nav a{
     border: 1px solid #E95A08;
     
 }
-
-
+/* footer */
+.footer-section{
+    gap: 100px;
+    align-items: start;
+}
+footer{
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-description{
+    max-width: 350px;
+}
+.footer-nav-item{
+    display: grid;
+    gap: 24px;
+}
+.footer-icon{
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    
+}
 
 /* responcive style */
 @media screen and (max-width:576px){
@@ -238,5 +261,19 @@ section{
 }
 .join-bg{
     height: 250px;
+}
+/* footer section */
+.footer-section{
+    flex-direction: column;
+    gap: 0px;
+}
+.footer-contant{
+    margin-bottom: 30px;
+}
+.footer-nav-item{
+    padding-left: 0;
+}
+.footer-icon{
+    margin-top: 30px;
 }
 }
