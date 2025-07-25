@@ -38,6 +38,7 @@ header,
 }
 section{
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 .section-title{
     font-size: 3rem;
@@ -131,7 +132,7 @@ nav a{
 .flower-badge{
     width: 20%;
     margin-top: -110px;
-    margin-left: 320px;
+    margin-left: 330px;
     position: absolute;
     filter: drop-shadow(4px 4px 3px rgba(0, 0, 0, 0.25));
 }
@@ -265,7 +266,6 @@ footer{
     background-color: white;
     width: 90%;
     margin: 0 auto;
-    padding-top: 60px;
     padding-bottom: 60px;
 }
 .footer-description{
@@ -304,6 +304,7 @@ footer{
 }
 section{
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 /* responcive plant section */
 .plant-container{
